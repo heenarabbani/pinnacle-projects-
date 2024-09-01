@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: chartreuse;
+}
+
+.todo-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: darkgreen;
+    border: 2px solid green;
+    box-shadow: 0 0 10px green;
+}
+#add-task {
+    background-color: rgb(2, 3, 2);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-task:hover {
+    background-color: rgb(195, 210, 195);
+}
+
+input[type="text"] {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid darkgreen
+}
+
+::placeholder {
+    color: rgb(2, 3, 2);
+}
+
+#edit-mode:hover {
+    background-color: rgb(195, 210, 195);
+}
+
+#clear-task,
+#edit-mode {
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-tasks {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#edit-mode {
+    background-color: #070907;
+    color: #fff;
+}
+
+.edit-mode #task-list li {
+    padding: 10px 0;
+    border-bottom: none;
+}
+
+.edit-mode #task-list li .task-text {
+    width: 75%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.edit-mode #task-list li .task-text:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgb(11, 9, 9);
+}
+
+.edit-mode #task-list li .edit-btn,
+.delete-btn {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.edit-mode #task-list li .edit-btn {
+    background-color: rgb(163, 202, 124); color: green;
+}
+
+.edit-mode #task-list li .delete-btn {
+    background-color: #f44336;
+    color: #fff;
+}
